@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>RAZNAЯ — студия красоты в Королёве</title>
+<meta name="description" content="Маникюр, педикюр, ресницы, брови и макияж в Королёве. Ежедневно с 10 до 21. Онлайн-запись.">
+<link rel="icon" href="../img/favicon.png">
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+
+<div class="loader" id="loader" aria-hidden="true">
+  <img class="loader__logo" src="../img/logo-neon.webp" alt="">
+  <div class="loader__count"><span id="loadNum">0</span>%</div>
+</div>
+
+<div class="cursor-glow" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="hdr" id="hdr">
+  <a class="hdr__logo" href="#top" aria-label="RAZNAЯ — наверх">RAZNA<span>Я</span></a>
+  <nav class="hdr__nav" aria-label="Разделы">
+    <a href="#services">Услуги</a>
+    <a href="#works">Работы</a>
+    <a href="#studio">Студия</a>
+    <a href="#prices">Цены</a>
+    <a href="#reviews">Отзывы</a>
+    <a href="#contacts">Контакты</a>
+  </nav>
+  <div class="hdr__right">
+    <span class="status" data-status><i></i><b>—</b></span>
+    <a class="hdr__phone" data-phone href="#"></a>
+    <a class="btn btn--neon btn--sm" data-booking href="#">Записаться</a>
+  </div>
+  <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span></button>
+</header>
+
+<div class="mnav" id="mnav">
+  <a href="#services">Услуги</a><a href="#works">Работы</a><a href="#studio">Студия</a>
+  <a href="#prices">Цены</a><a href="#reviews">Отзывы</a><a href="#contacts">Контакты</a>
+</div>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="hero__text">
+      <p class="eyebrow"><span class="dot"></span>Студия красоты · Королёв</p>
+      <h1 class="hero__title">
+        <span class="line"><span>Красота</span></span>
+        <span class="line"><span>бывает</span></span>
+        <span class="line"><span class="neon-word">разной</span></span>
+      </h1>
+      <p class="hero__lead">Маникюр, педикюр, ресницы, брови и макияж. Можно сделать несколько услуг за один визит — пока пьёте кофе.</p>
+      <div class="hero__cta">
+        <a class="btn btn--neon" data-booking href="#">Записаться онлайн</a>
+        <a class="btn btn--ghost" href="#prices">Смотреть цены</a>
+      </div>
+      <div class="hero__chips">
+        <a class="chip" data-yandex href="#"><b>5,0</b><span class="stars">★★★★★</span><small>105 оценок на Яндексе</small></a>
+        <span class="chip chip--award"><b>✦</b><small>Хорошее место 2026</small></span>
+      </div>
+    </div>
+    <div class="hero__media">
+      <figure class="hero__main"><img src="../img/face-pearls.webp" alt="Макияж со стразами — работа студии RAZNAЯ"></figure>
+      <figure class="hero__float hero__float--1"><img src="../img/nails-03.webp" alt="Маникюр — работа студии"></figure>
+      <figure class="hero__float hero__float--2"><img src="../img/lash-03.webp" alt="Наращивание ресниц — работа студии"></figure>
+      <div class="hero__badge"><span>Ежедневно</span><b>10–21</b></div>
+    </div>
+    <a class="hero__scroll" href="#services" aria-label="Листать вниз"><span></span>Листайте</a>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Маникюр</span><i>✦</i><span>Педикюр</span><i>✦</i><span>Наращивание ресниц</span><i>✦</i><span>Брови</span><i>✦</i><span>Ламинирование</span><i>✦</i><span>Макияж</span><i>✦</i><span>Обучение</span><i>✦</i>
+      <span>Маникюр</span><i>✦</i><span>Педикюр</span><i>✦</i><span>Наращивание ресниц</span><i>✦</i><span>Брови</span><i>✦</i><span>Ламинирование</span><i>✦</i><span>Макияж</span><i>✦</i><span>Обучение</span><i>✦</i>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="sec services" id="services">
+    <div class="sec__head">
+      <p class="eyebrow">01 — Услуги</p>
+      <h2 class="h2 split">Всё для вашей красоты <em>в одной студии</em></h2>
+    </div>
+    <div class="svc-grid" id="svcGrid"></div>
+  </section>
+
+  <!-- WORKS: pinned horizontal scroll on desktop -->
+  <section class="works" id="works">
+    <div class="works__pin">
+      <div class="works__head">
+        <p class="eyebrow">02 — Работы</p>
+        <h2 class="h2 split">Наши работы <em>крупным планом</em></h2>
+        <p class="works__hint">Реальные фото из студии</p>
+      </div>
+      <div class="works__track" id="worksTrack"></div>
+      <div class="works__bar"><span id="worksBar"></span></div>
+    </div>
+  </section>
+
+  <!-- STUDIO -->
+  <section class="sec studio" id="studio">
+    <div class="studio__grid">
+      <div class="studio__text">
+        <p class="eyebrow">03 — Студия</p>
+        <h2 class="h2 split">Место, куда хочется <em>вернуться</em></h2>
+        <p class="lead">Светлый зал, неоновая вывеска, мощные лампы и качественные материалы. Пока мастер работает — кофе, чай и сладости. Можно прийти с собакой.</p>
+        <ul class="perks">
+          <li><b>☕</b>Кофе, чай и угощения</li>
+          <li><b>⇆</b>Несколько услуг одновременно</li>
+          <li><b>P</b>Парковка рядом</li>
+          <li><b>₽</b>Карта, СБП, наличные</li>
+          <li><b>🎁</b>Подарочные сертификаты</li>
+          <li><b>🐾</b>Можно с питомцем</li>
+        </ul>
+      </div>
+      <div class="studio__media">
+        <figure class="ph ph--tall" data-speed="-0.12"><img src="../img/room-01.webp" alt="Зал студии с неоновой вывеской RAZNAЯ" loading="lazy"></figure>
+        <figure class="ph ph--wide" data-speed="0.1"><img src="../img/room-06.webp" alt="Зона педикюра" loading="lazy"></figure>
+        <figure class="ph ph--sq" data-speed="-0.05"><img src="../img/room-09.webp" alt="Фотозона с цветами" loading="lazy"></figure>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat"><b data-count="5" data-dec="1">5,0</b><span>рейтинг на Яндекс Картах</span></div>
+      <div class="stat"><b data-count="105">105</b><span>оценок от клиентов</span></div>
+      <div class="stat"><b data-count="150" data-plus>150+</b><span>услуг в прайсе</span></div>
+      <div class="stat"><b>10–21</b><span>каждый день без выходных</span></div>
+    </div>
+  </section>
+
+  <!-- MASTERS -->
+  <section class="sec masters" id="masters">
+    <div class="sec__head">
+      <p class="eyebrow">04 — Мастера</p>
+      <h2 class="h2 split">Руки, которым <em>доверяют</em></h2>
+    </div>
+    <div class="masters__grid" id="mastersGrid"></div>
+  </section>
+
+  <!-- PRICES -->
+  <section class="sec prices" id="prices">
+    <div class="sec__head">
+      <p class="eyebrow">05 — Цены</p>
+      <h2 class="h2 split">Цены <em>без сюрпризов</em></h2>
+    </div>
+    <div class="tabs" role="tablist" id="priceTabs"></div>
+    <div class="plist" id="priceList"></div>
+    <div class="prices__foot">
+      <p>Свободное время мастеров и полный прайс — в онлайн-записи.</p>
+      <a class="btn btn--neon" data-booking href="#">Выбрать время</a>
+    </div>
+  </section>
+
+  <!-- PROMO -->
+  <section class="promo">
+    <div class="promo__big" aria-hidden="true">−10%</div>
+    <div class="promo__text">
+      <p class="eyebrow">Акция</p>
+      <h3>Маникюр + педикюр <em>в один визит</em></h3>
+      <p>Скидка 10% на маникюр и педикюр с покрытием, если делаете их вместе.</p>
+      <a class="btn btn--neon" data-booking href="#">Записаться на комплекс</a>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="sec reviews" id="reviews">
+    <div class="sec__head sec__head--row">
+      <div>
+        <p class="eyebrow">06 — Отзывы</p>
+        <h2 class="h2 split">Что говорят <em>гости</em></h2>
+      </div>
+      <a class="rating-card" data-yandex href="#">
+        <b>5,0</b><span class="stars">★★★★★</span><small>96 отзывов на Яндекс Картах →</small>
+      </a>
+    </div>
+    <div class="rv" id="rv">
+      <div class="rv__track" id="rvTrack"></div>
+      <div class="rv__ctrl">
+        <button class="rv__btn" id="rvPrev" aria-label="Предыдущий отзыв">←</button>
+        <span class="rv__num" id="rvNum">01 / 08</span>
+        <button class="rv__btn" id="rvNext" aria-label="Следующий отзыв">→</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTS -->
+  <section class="sec contacts" id="contacts">
+    <div class="contacts__grid">
+      <div class="contacts__text">
+        <p class="eyebrow">07 — Контакты</p>
+        <h2 class="h2 split">Ждём вас <em>в гости</em></h2>
+        <dl class="cinfo">
+          <div><dt>Адрес</dt><dd data-address></dd><dd class="muted" data-near></dd></div>
+          <div><dt>Режим работы</dt><dd>Ежедневно, 10:00–21:00</dd><dd class="status status--inline" data-status><i></i><b>—</b></dd></div>
+          <div><dt>Телефон</dt><dd><a data-phone href="#"></a></dd></div>
+          <div><dt>Написать</dt><dd class="msgr">
+            <a data-wa href="#">WhatsApp</a><a data-tg href="#">Telegram</a><a data-vk href="#">ВКонтакте</a>
+          </dd></div>
+        </dl>
+        <div class="contacts__cta">
+          <a class="btn btn--neon" data-booking href="#">Записаться онлайн</a>
+          <a class="btn btn--ghost" data-route href="#">Построить маршрут</a>
+        </div>
+      </div>
+      <a class="map" data-yandex href="#" aria-label="Открыть на Яндекс Картах">
+        <img src="../img/map.png" alt="Карта: Королёв, ул. 50-летия ВЛКСМ, 5А" loading="lazy">
+        <span class="map__pin">RAZNAЯ</span>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="ftr">
+  <div class="ftr__word" aria-hidden="true">RAZNAЯ</div>
+  <div class="ftr__row">
+    <span>© RAZNAЯ, Королёв</span>
+    <span>ул. 50-летия ВЛКСМ, 5А · ежедневно 10–21</span>
+    <a data-phone href="#"></a>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a class="mbar__call" data-phone-icon href="#">Позвонить</a>
+  <a class="mbar__book" data-booking href="#">Записаться</a>
+</div>
+
+<div class="demo-badge">Демо-версия сайта</div>
+
+<script src="../data.js?v=1"></script>
+<script src="../vendor/gsap.min.js"></script>
+<script src="../vendor/ScrollTrigger.min.js"></script>
+<script src="../vendor/SplitText.min.js"></script>
+<script src="main.js?v=1"></script>
+</body>
+</html>

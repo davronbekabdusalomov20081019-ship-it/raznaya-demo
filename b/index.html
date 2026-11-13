@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>RAZNAЯ — студия красоты в Королёве</title>
+<meta name="description" content="Маникюр, педикюр, ресницы, брови и макияж в Королёве. Ежедневно с 10 до 21. Онлайн-запись.">
+<link rel="icon" href="../img/favicon.png">
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+
+<div class="curtain" id="curtain" aria-hidden="true"><span class="curtain__word">Razna<i>я</i></span></div>
+<div class="peek" id="peek" aria-hidden="true"><img alt=""></div>
+
+<header class="hdr" id="hdr">
+  <nav class="hdr__nav hdr__nav--l" aria-label="Разделы">
+    <a href="#services">Услуги</a><a href="#gallery">Работы</a><a href="#prices">Цены</a>
+  </nav>
+  <a class="hdr__logo" href="#top" aria-label="RAZNAЯ — наверх">Razna<i>я</i></a>
+  <nav class="hdr__nav hdr__nav--r">
+    <a href="#reviews">Отзывы</a><a href="#contacts">Контакты</a>
+    <a class="hdr__book" data-booking href="#">Записаться</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span></button>
+</header>
+
+<div class="mnav" id="mnav">
+  <a href="#services">Услуги</a><a href="#gallery">Работы</a><a href="#studio">Студия</a>
+  <a href="#prices">Цены</a><a href="#reviews">Отзывы</a><a href="#contacts">Контакты</a>
+  <a class="btn" data-booking href="#">Записаться онлайн</a>
+</div>
+
+<main id="top">
+
+  <!-- HERO: the central arch grows into a full-screen photo while scrolling -->
+  <section class="hero" id="hero">
+    <div class="hero__stage">
+      <p class="hero__kicker"><span>Студия красоты</span><span>Королёв</span><span>с 10 до 21 каждый день</span></p>
+      <h1 class="hero__title">
+        <span class="row row--1"><span>Красота</span></span>
+        <span class="row row--2"><span><i>бывает</i></span></span>
+        <span class="row row--3"><span>разной</span></span>
+      </h1>
+      <figure class="arch arch--side arch--l"><img src="../img/nails-07.webp" alt="Нюдовый маникюр — работа студии"></figure>
+      <figure class="arch arch--main" id="heroArch">
+        <img src="../img/face-natural.webp" alt="Макияж и брови — работа студии RAZNAЯ">
+        <figcaption class="arch__cap">Ваш образ — <i>ваши правила</i></figcaption>
+      </figure>
+      <figure class="arch arch--side arch--r"><img src="../img/lash-05.webp" alt="Наращивание ресниц — работа студии"></figure>
+      <div class="hero__meta">
+        <a class="rate" data-yandex href="#"><b>5,0</b><span>★★★★★</span><small>105 оценок · Яндекс Карты</small></a>
+        <a class="btn" data-booking href="#">Записаться онлайн</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MANIFESTO: words light up while scrolling -->
+  <section class="manifesto">
+    <p class="eyebrow">О студии</p>
+    <p class="manifesto__text" id="manifesto">Мы&nbsp;— небольшая студия в&nbsp;Королёве, куда приходят не&nbsp;только за&nbsp;маникюром, бровями и&nbsp;ресницами, но&nbsp;и&nbsp;за&nbsp;спокойным часом для&nbsp;себя. Вкусный кофе, внимательные мастера и&nbsp;несколько услуг за&nbsp;один визит&nbsp;— чтобы красота не&nbsp;отнимала целый день.</p>
+    <div class="badges">
+      <span class="badge"><b>✦</b>Хорошее место 2026</span>
+      <span class="badge"><b>5,0</b>рейтинг на Яндексе</span>
+      <span class="badge"><b>96</b>отзывов</span>
+    </div>
+  </section>
+
+  <!-- SERVICES: editorial index with floating photo preview -->
+  <section class="sec services" id="services">
+    <div class="sec__head">
+      <p class="eyebrow">Услуги</p>
+      <h2 class="h2 split">Что мы <i>делаем</i></h2>
+    </div>
+    <ol class="index" id="svcIndex"></ol>
+  </section>
+
+  <!-- GALLERY: three columns moving at different speeds -->
+  <section class="sec gallery" id="gallery">
+    <div class="sec__head sec__head--center">
+      <p class="eyebrow">Работы</p>
+      <h2 class="h2 split">Красота <i>в деталях</i></h2>
+    </div>
+    <div class="cols" id="cols">
+      <div class="col" data-speed="-.08"></div>
+      <div class="col" data-speed=".1"></div>
+      <div class="col" data-speed="-.14"></div>
+    </div>
+  </section>
+
+  <!-- STUDIO -->
+  <section class="studio" id="studio">
+    <figure class="studio__img"><img src="../img/room-01.webp" alt="Зал студии RAZNAЯ с неоновой вывеской" loading="lazy"></figure>
+    <div class="studio__card">
+      <p class="eyebrow">Студия</p>
+      <h2 class="h2 split">Здесь хочется <i>остаться подольше</i></h2>
+      <ul class="perks">
+        <li>Кофе, чай и сладости, пока мастер работает</li>
+        <li>Маникюр и брови — одновременно, за один визит</li>
+        <li>Оплата картой, по СБП или наличными</li>
+        <li>Подарочные сертификаты</li>
+        <li>Можно прийти с питомцем</li>
+        <li>Есть парковка</li>
+      </ul>
+    </div>
+    <div class="studio__strip">
+      <figure><img src="../img/room-06.webp" alt="Зона педикюра" loading="lazy"></figure>
+      <figure><img src="../img/room-07.webp" alt="Рабочее место визажиста" loading="lazy"></figure>
+      <figure><img src="../img/room-09.webp" alt="Фотозона с цветами" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <!-- MASTERS -->
+  <section class="sec masters" id="masters">
+    <div class="sec__head">
+      <p class="eyebrow">Мастера</p>
+      <h2 class="h2 split">Те, к кому <i>возвращаются</i></h2>
+    </div>
+    <div class="masters__grid" id="mastersGrid"></div>
+  </section>
+
+  <!-- PRICES: accordion -->
+  <section class="sec prices" id="prices">
+    <div class="prices__grid">
+      <div class="prices__aside">
+        <p class="eyebrow">Цены</p>
+        <h2 class="h2 split">Прайс <i>студии</i></h2>
+        <p class="muted">Цены из прайса студии. Свободное время мастеров — в онлайн-записи.</p>
+        <a class="btn" data-booking href="#">Выбрать время</a>
+        <div class="promo">
+          <span class="promo__pct">−10%</span>
+          <p><b>Маникюр + педикюр</b> с покрытием в один визит — скидка 10%.</p>
+        </div>
+      </div>
+      <div class="acc" id="acc"></div>
+    </div>
+  </section>
+
+  <!-- REVIEWS: two marquee rows -->
+  <section class="reviews" id="reviews">
+    <div class="sec__head sec__head--center">
+      <p class="eyebrow">Отзывы</p>
+      <h2 class="h2 split">Нам <i>пишут</i></h2>
+      <a class="rate rate--center" data-yandex href="#"><b>5,0</b><span>★★★★★</span><small>96 отзывов на Яндекс Картах →</small></a>
+    </div>
+    <div class="rrow" id="rrow1"><div class="rrow__track"></div></div>
+    <div class="rrow rrow--rev" id="rrow2"><div class="rrow__track"></div></div>
+  </section>
+
+  <!-- CONTACTS -->
+  <section class="sec contacts" id="contacts">
+    <div class="contacts__grid">
+      <div>
+        <p class="eyebrow">Контакты</p>
+        <h2 class="h2 split">Приходите <i>в гости</i></h2>
+        <div class="cinfo">
+          <p class="cinfo__addr" data-address></p>
+          <p class="muted" data-near></p>
+          <p class="cinfo__hours">Ежедневно, 10:00–21:00 <span class="status" data-status><i></i><b>—</b></span></p>
+          <a class="cinfo__phone" data-phone href="#"></a>
+          <div class="msgr"><a data-wa href="#">WhatsApp</a><a data-tg href="#">Telegram</a><a data-vk href="#">ВКонтакте</a></div>
+        </div>
+        <div class="contacts__cta">
+          <a class="btn" data-booking href="#">Записаться онлайн</a>
+          <a class="btn btn--line" data-route href="#">Маршрут</a>
+        </div>
+      </div>
+      <a class="map" data-yandex href="#" aria-label="Открыть на Яндекс Картах">
+        <img src="../img/map.png" alt="Карта: Королёв, ул. 50-летия ВЛКСМ, 5А" loading="lazy">
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="ftr">
+  <div class="ftr__word">Razna<i>я</i></div>
+  <div class="ftr__row">
+    <span>Студия красоты · Королёв</span>
+    <span>ул. 50-летия ВЛКСМ, 5А</span>
+    <a data-phone href="#"></a>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a class="mbar__call" data-phone-icon href="#">Позвонить</a>
+  <a class="mbar__book" data-booking href="#">Записаться</a>
+</div>
+<div class="demo-badge">Демо-версия сайта</div>
+
+<script src="../data.js?v=1"></script>
+<script src="../vendor/gsap.min.js"></script>
+<script src="../vendor/ScrollTrigger.min.js"></script>
+<script src="../vendor/SplitText.min.js"></script>
+<script src="main.js?v=1"></script>
+</body>
+</html>

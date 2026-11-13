@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>RAZNAЯ — два варианта сайта</title>
+<link rel="icon" href="img/favicon.png">
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>
+  :root { --bg: #121014; --ink: #f6eff4; --muted: #a69aa3; color-scheme: dark; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--ink); font: 400 16px/1.6 'Manrope', system-ui, sans-serif; min-height: 100vh; padding: clamp(28px, 5vw, 64px) 16px; }
+  .wrap { max-width: 1120px; margin: 0 auto; }
+  h1 { font: 700 clamp(28px, 4.4vw, 54px)/1.05 'Unbounded', sans-serif; text-transform: uppercase; letter-spacing: -.03em; margin-bottom: 14px; }
+  h1 span { color: #ff3fa4; text-shadow: 0 0 18px rgba(255, 63, 164, .6); }
+  .sub { color: var(--muted); max-width: 640px; margin-bottom: 40px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  .card { display: block; border-radius: 26px; overflow: hidden; color: inherit; text-decoration: none; border: 1px solid rgba(255, 255, 255, .1); transition: transform .35s, border-color .35s; }
+  .card:hover { transform: translateY(-6px); border-color: rgba(255, 63, 164, .6); }
+  .card__img { aspect-ratio: 4/3; overflow: hidden; position: relative; }
+  .card__img img { width: 100%; height: 100%; object-fit: cover; transition: transform 1s; }
+  .card:hover .card__img img { transform: scale(1.05); }
+  .card__body { padding: 22px 24px 26px; }
+  .card__body small { font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); }
+  .card__body h2 { font-size: 30px; line-height: 1.15; margin: 6px 0 8px; }
+  .card__body p { color: var(--muted); font-size: 15px; }
+  .a .card__body { background: #0b0a0d; }
+  .a h2 { font-family: 'Unbounded', sans-serif; text-transform: uppercase; font-size: 24px; color: #ffd6ec; text-shadow: 0 0 14px #ff3fa4; }
+  .b .card__body { background: #f4ede6; color: #2b1a21; }
+  .b .card__body p, .b .card__body small { color: #7f6d72; }
+  .b h2 { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 36px; }
+  .b h2 i { color: #b84a6e; }
+  .go { display: inline-block; margin-top: 16px; font-weight: 600; font-size: 14px; }
+  .note { margin-top: 34px; color: var(--muted); font-size: 14px; }
+  @media (max-width: 720px) { .grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Сайт для <span>RAZNAЯ</span></h1>
+    <p class="sub">Два варианта дизайна для студии красоты в Королёве. Цены, отзывы, адрес и фото работ взяты с вашей страницы на Яндекс Картах, кнопка «Записаться» ведёт в вашу онлайн-запись YCLIENTS.</p>
+    <div class="grid">
+      <a class="card a" href="a/index.html">
+        <div class="card__img"><img src="img/face-pearls.webp" alt="Вариант «Неон»"></div>
+        <div class="card__body"><small>Вариант 1</small><h2>Неон</h2><p>Тёмный, яркий, в цветах вашей неоновой вывески. Крупные заголовки, работы листаются по горизонтали.</p><span class="go">Открыть →</span></div>
+      </a>
+      <a class="card b" href="b/index.html">
+        <div class="card__img"><img src="img/face-natural.webp" alt="Вариант «Пудра»"></div>
+        <div class="card__body"><small>Вариант 2</small><h2>Пудра <i>и шёлк</i></h2><p>Светлый и спокойный, как глянцевый журнал. Фото в арках, главный кадр раскрывается на весь экран.</p><span class="go">Открыть →</span></div>
+      </a>
+    </div>
+    <p class="note">Это демо-версия: тексты, мастеров и фото можно заменить на ваши.</p>
+  </div>
+</body>
+</html>
